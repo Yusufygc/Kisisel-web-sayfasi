@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Sayfası</title>
+    <style>
+      .login {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        background-color: skyblue;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login" style="text-align: center">
+      <h2>LOG İN</h2>
+
+      <form action="login.php" method="post">
+        <table>
+          <tr>
+            <td>
+              <label for="kullanici_adi">Kullanıcı Adı :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="kullanici_adi"
+                required
+                placeholder="bxxxxxxxxxx@sakarya.edu.tr"
+                size="21px"
+              />
+              <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="sifre">Şifre : </label>
+            </td>
+            <td>
+              <input type="password" name="sifre" size="21px" /> <br />
+              <br />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <input type="submit" value="GÖNDER" />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

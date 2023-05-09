@@ -14,11 +14,18 @@
         gerçekleştiriniz.
       </p>
     </div>
-    <form action="post">
+    <form action="iletisim.php" method="post">
       <label for="adi">Adı :</label>
       <input type="text" name="adi" /><br />
       <label for="soyadi">Soyadı :</label>
-      <input type="text" name="soyadi" />
+      <input type="text" name="soyadi" /><br />
+      <input type="submit" value="GÖNDER" />
+      <br /><br />
+      <p>Hangi konu hakkında iletişime geçmek istersiniz ?</p>
+      <input type="checkbox" name="ders1" value="Html" />Html kullanımı<br />
+      <input type="checkbox" name="ders2" value="CSS" />CSS kullanımı <br />
+      <input type="checkbox" name="personal1" value="person1" />hakkımda
     </form>
+    <a href="1_girisSayfasi.html">Giriş sayfasına dön</a>
   </body>
 </html>
