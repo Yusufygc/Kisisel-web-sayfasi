@@ -1,0 +1,83 @@
+.login {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.hakkımda {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.egitim {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.sehirim {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.ilgiAlani {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.mirasimiz {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.iletisim {
+  width: 100px;
+  height: 30px;
+  padding: 20px;
+  background-color: skyblue;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
