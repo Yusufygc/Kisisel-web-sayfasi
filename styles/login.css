@@ -1,17 +1,21 @@
 /*LOGİN SAYFASI STİLLERİ*/
+.body {
+  /*background-image: url("img/arkaplan.jpg");*/
+  /* background-repeat: no-repeat;*/
+  /* background-size: cover;*/
+  /*background-attachment: fixed;*/
+  background-color: #252323;
+}
 .login {
+  text-align: center;
   width: 300px;
   height: 300px;
   padding: 20px;
-  background-color: skyblue;
+  background-color: #252323;
   position: absolute;
   top: 40%;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -170px;
   margin-top: -150px;
+  color: aliceblue;
 }
-/*##############################################*/
-
-/*##############################################*/
-
-/*2_hakkımda.html SAYFASI STİLLERİ*/
