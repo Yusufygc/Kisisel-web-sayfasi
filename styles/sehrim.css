@@ -1,0 +1,169 @@
+.body {
+  background-color: rgb(255, 251, 0);
+}
+
+.class-1 {
+  text-align: center;
+  background-color: aqua;
+}
+.class-2 {
+  text-align: center;
+  background-color: aqua;
+  font-size: 25px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-2:hover {
+  font-size: 30px;
+  text-align: center;
+}
+
+.class-3 {
+  background-color: aqua;
+  width: 1500px;
+  height: 460px;
+  padding: 15px;
+  margin: 40px;
+}
+.muze {
+  background-color: rgb(255, 0, 170);
+  width: 900px;
+  height: 420px;
+
+  padding: 25px;
+  margin-right: 20px;
+  float: right;
+}
+
+#muze1 {
+  margin: 10px;
+}
+
+#muze2 {
+  margin: 40px;
+}
+
+.class-4 {
+  background-color: aqua;
+  width: 600px;
+  height: 420px;
+  padding: 15px;
+  margin: 40px;
+}
+
+#erciyes {
+  background-color: rgb(255, 0, 170);
+  width: 500px;
+  height: 420px;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.class-5 {
+  background-color: aqua;
+  width: 1000px;
+  height: 380px;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+}
+
+#kentOrmani {
+  background-color: rgb(255, 0, 170);
+  width: 500px;
+  height: 380px;
+  padding: 15px;
+  margin-right: 130px;
+  margin-top: 20px;
+  float: right;
+}
+
+.class-6 {
+  background-color: aqua;
+  width: 800px;
+  height: 350px;
+  padding: 15px;
+  margin: 40px;
+}
+
+#kapuzbasi {
+  background-color: rgb(255, 0, 170);
+  width: 500px;
+  height: 380px;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.class-7 {
+  background-color: aqua;
+  width: 900px;
+  height: 330px;
+  padding: 15px;
+  margin-right: 75px;
+  margin-top: 30px;
+  float: right;
+}
+
+#sultanSazligi {
+  background-color: rgb(255, 0, 170);
+  width: 500px;
+  height: 380px;
+  padding: 15px;
+  margin-right: 120px;
+  margin-top: 20px;
+  float: right;
+}
+
+.class-8 {
+  background-color: aqua;
+  width: 800px;
+  height: 380px;
+  padding: 15px;
+  margin: 40px;
+  margin-top: 20px;
+}
+.class-9 {
+  background-color: aqua;
+  width: 1000px;
+  height: 130px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-10 {
+  background-color: aqua;
+  width: 1000px;
+  height: 150px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-11 {
+  background-color: aqua;
+  width: 1000px;
+  height: 170px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-12 {
+  background-color: aqua;
+  width: 1000px;
+  height: 220px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-13 {
+  background-color: aqua;
+  width: 1000px;
+  height: 290px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-14 {
+  background-color: aqua;
+  width: 1000px;
+  height: 370px;
+  padding: 15px;
+  margin: 15px;
+}
+.class-15 {
+  background-color: rgb(238, 244, 244);
+}

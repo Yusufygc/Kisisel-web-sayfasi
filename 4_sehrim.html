@@ -5,21 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Şehrim</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/sehrim.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .mySlides {
+        display: none;
+        width: 500px;
+        height: 400px;
+        margin-left: 370px;
+      }
+      .button_left {
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        opacity: 0.5;
+      }
+      .button_right {
+        position: absolute;
+        top: 50%;
+        right: 21%;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        opacity: 0.5;
+      }
+    </style>
   </head>
-  <body>
+  <body class="body">
     <div class="class-1">
       <h1>ŞEHRİM SAYFASINA HOŞGELDİNİZ</h1>
     </div>
 
     <div class="class-2"><a href="https://www.kayseri.bel.tr/">KAYSERİ</a></div>
 
+    <div
+      class="w3-content w3-display-container"
+      style="max-width: 800px"
+      style="max-height: 500px"
+      style="position: relative"
+    >
+      <img class="mySlides" src="resimler/erciyes.jpeg" style="width: 100%" />
+      <img class="mySlides" src="resimler/kale3.jpeg" style="width: 100%" />
+      <img class="mySlides" src="resimler/erciyes2.jpeg" style="width: 100%" />
+      <img class="mySlides" src="resimler/meydan2.jpeg" style="width: 100%" />
+      <img class="mySlides" src="resimler/pastrıma.jpeg" style="width: 100%" />
+      <img class="mySlides" src="resimler/mantı.jpeg" style="width: 100%" />
+
+      <button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="button_right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
     <div class="class-3">
       <p>
-        Kayseri (Yunanca: Καισάρεια, romanize: Kaisareia), Türkiye'nin bir
-        ilidir.Türkiye'nin toplam nüfus bakımından en kalabalık 14. şehri olup
-        yüzölçümü olarak Türkiye'nin en büyük 8.ilidir. İç Anadolu’nun büyük
-        ticaret ve sanayi merkezidir.
+        <b>KAYSERİ</b> (Yunanca: Καισάρεια, romanize: Kaisareia), Türkiye'nin
+        bir ilidir.Türkiye'nin toplam nüfus bakımından en kalabalık 14. şehri
+        olup yüzölçümü olarak Türkiye'nin en büyük 8.ilidir. İç Anadolu’nun
+        büyük ticaret ve sanayi merkezidir.
       </p>
       <p>
         Orta Kızılırmak Bölümünde, Erciyes Dağı'nın eteklerinde bir ildir. Kuzey
@@ -47,15 +108,34 @@
         İlde km2'ye 85 kişi düşmektedir. (Yoğunluğun en fazla olduğu ilçe: 890
         kişi ile Melikgazi’dir)
       </p>
-      <h2>KÜLTÜR</h2>
-      <h3>Mutfak</h3>
-      <p>
-        Mantı, pastırma, sucuk, sucuk içi, çemen, fırınağzı, pöç, Kayseri
-        Ketesi, yağ mantısı, Pehli, Yağlama (Şebit Mantısı)'dır. Kabak çiçeği
-        dolması ile içli köfte de yapılır, yöre sarımsak ve baharatlı yemekleri
-        ile tanınır. Ayrıca Nevzine tatlısı da Kayseri'ye özgü bir tatlı
-        çeşididir.
-      </p>
+
+      <div>
+        <h4>Mutfak</h4>
+        <p>
+          Mantı, pastırma, sucuk, sucuk içi, çemen, fırınağzı, pöç, Kayseri
+          Ketesi, yağ mantısı, Pehli, Yağlama (Şebit Mantısı)'dır. Kabak çiçeği
+          dolması ile içli köfte de yapılır, yöre sarımsak ve baharatlı
+          yemekleri ile tanınır. Ayrıca Nevzine tatlısı da Kayseri'ye özgü bir
+          tatlı çeşididir.
+        </p>
+      </div>
+    </div>
+    <div class="muze">
+      <img
+        id="muze1"
+        src="resimler/ataEv.jpeg"
+        alt="Atatürk Evi Müzesi"
+        width="350px"
+        height="300px"
+      />
+
+      <img
+        id="muze2"
+        src="resimler/milliMucadele.jpeg"
+        alt="milli mücadele müzesi"
+        width="350px"
+        height="300px"
+      />
     </div>
 
     <div class="class-4">
@@ -121,7 +201,7 @@
       </ul>
     </div>
 
-    <div class="class-5" style="width: 250px" style="height: 250px">
+    <div class="class-5">
       <h4>
         <a href="https://tr.wikipedia.org/wiki/Erciyes_Da%C4%9F%C4%B1">
           ERCİYES DAĞI</a
@@ -143,6 +223,29 @@
         uzaklıkta olan Tekir Yaylası üzerine kurulmuştur. Bol kar alışı ve
         havasından dolayı kayak mevsimi uzun olan bir dağdır.
       </p>
+      <p>
+        Ailecek gidilebilecek bir yerdir. Kayak yapmayı bilmiyorsanız bile kızak
+        ile kayabilirsiniz.Kayaktan sonra sıcak bir çay ve sucuk ekmek yiyerek
+        erciyes macerasını zirvede bırakıp unutulmayacak bir anı olarak
+        hafızanıza kazıyabilirsiniz.
+      </p>
+    </div>
+    <div id="erciyes">
+      <img
+        src="resimler/dag.jpeg"
+        alt="erciyes dağı"
+        width="460px"
+        height="380px"
+      />
+    </div>
+
+    <div id="kentOrmani">
+      <img
+        src="resimler/kentOrmani.jpeg"
+        alt="kıranardı kent ormanı"
+        width="470px"
+        height="350px"
+      />
     </div>
 
     <div class="class-6">
@@ -154,11 +257,11 @@
         >
       </h4>
       <p>
-        Yahyalı ilçesinin Küçükçakır köyünün kuzeyinde bulunan Ensenin tepesinde
-        yer almaktadır. Kapuzbaşı şelaleleri irtifa akışı itibarıyla Niagara'dan
-        (55 m), Finlandiya'da bulunan İmatra'dan (25 m), Erzurum’daki Tortum’dan
-        (50 m), Antalya’da bulunan Düden’den (25 m) ve Manavgat’tan (5 m) daha
-        büyüktür.
+        Kayseri’nin sıcak yaz günlerinde, gece ve gündüz doyumsuz Erciyes ve
+        şehir manzarası sunan Kıranardı Kent Ormanı hisarcık istikametinde olup
+        hem Erciyes’i hem de Hisarcık’ı fotoğraflayabilmek ve Kayseri’nin uzak
+        plan görüntüsünü de görmek mümkündür. Kısaca burası hem piknik yapmak
+        için hem de seyir seyri açısından harika bir mekandır.
       </p>
     </div>
 
@@ -169,11 +272,42 @@
         >
       </h4>
       <p>
-        850.000 metrekare yüzölçümü, spor ve yürüyüş alanları ve restoranları
-        bulunan Kayseri'ye kara yoluyla 10 dk uzaklıkta bir bölgedir.
+        Beş tanesi büyük, 2 tanesi küçük olmak üzere yan yana dizi halinde
+        dökülen şelalelerin yükseklikleri ortalama 40-60 m. olup, her biri bir
+        dereyi besleyecek güçtedir. Kapuzbaşı Şelaleleri, sularının yıl boyu gür
+        akması ve yüksekliklerinin fazla olması nedeniyle yurdumuzun en büyük
+        şelaleri arasında yer almaktadır. Dağ yamaçlarından biribiri ile
+        yarışırcasına akan yan yana 7 şelale, doğanın Kayseri’ye armağan ettiği
+        eşsiz güzelliklerden. Bembeyaz akan Kapuzbaşı Şelaleleri, etrafında
+        piknik alanlarıyla, suyun huzur veren dinlendirici sesi eşliğinde güzel
+        bir gün geçirmek için mükemmel bir ortam yaratıyor. Kayseri’deki en
+        popüler treking parkuru üzerindeki şelaleler benzersiz manzalar
+        eşliğinde bir yürüyüş deneyimi sunuyor. Yahyalı ilçesinde Kapuzbaşı
+        Şelaleleri dışında Yeşilköy ve Derebağ Şelaleleri de var ve etrafındaki
+        yeşil alanla olağan üstü görüntüler yaratıyor. Derebağ Şelalesi yanında
+        ferah bir gün geçirmek için çay evi, restoran ve piknik alanları da var.
+        Torosların Tepesindeki doğal güzelliklere sahip Kapuzbaşı Şelalelerine
+        ulaşımı sağlayan yolun tamamı asfaltlanmıştır. Önceden üç saate ulaşılan
+        güzelliklere artık 1,5 saatte kavuşmak mümkündür.
       </p>
     </div>
+    <div id="kapuzbasi">
+      <img
+        src="resimler/kapuzbasi.jpeg"
+        alt="kapuzbaşı şelaleleri"
+        width="450px"
+        height="350px"
+      />
+    </div>
 
+    <div id="sultanSazligi">
+      <img
+        src="resimler/sultanSazligi.jpeg"
+        alt="sultan sazlığı"
+        width="470px"
+        height="350px"
+      />
+    </div>
     <div class="class-8">
       <h4>
         <a href="https://kayseri.ktb.gov.tr/TR-183204/sultan-sazligi.html"
@@ -187,7 +321,14 @@
         600 bin adet ördek, kaz ve flamingo tespit edilmiştir. 17.200 hektarlık
         alanı kapsamaktadır. 1971 yılında alanın Türkiye Cumhuriyeti Tarım ve
         Orman Bakanlığı tarafından "Su Kuşları Koruma ve Üretme Sahası" olarak
-        ilan edilmesini takiben, koruma çalışmaları başlatılmıştır.
+        ilan edilmesini takiben, koruma çalışmaları başlatılmıştır.Sultan
+        Sazlığı, step ekosistemi içerisinde eşine az rastlanan tatlı ve tuzlu su
+        ekosistemini bir arada bulundurarak, İç Anadolu step ekosistemi
+        içerisinde sahip olduğu zengin biyolojik çeşitliliği ve Afrika ile
+        Avrupa arasındaki göçmen kuşlarının kullandığı iki ana kuş göç yolunun
+        bu alanda kesişmesi nedeniyle ülkemizde en önemli sulak alanlardan
+        birisidir. Burada 600 bin adet ördek, kaz, flamingo ve çok çeşitli
+        kuşlara rastlanır.
       </p>
     </div>
 
@@ -315,5 +456,29 @@
         >Giriş sayfasına dön</a
       >
     </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>
