@@ -1,0 +1,44 @@
+header {
+  margin-top: 50px;
+  background-color: aquamarine;
+}
+
+figure {
+  margin: 40px;
+  padding-left: 90px;
+  width: 450px;
+
+  background-color: aqua;
+}
+#hakkımda {
+  margin-left: 545px;
+  margin-top: -265px;
+  padding: 40px;
+  width: 800px;
+  background-color: rgb(123, 203, 86);
+}
+section {
+  margin: 40px;
+  padding: 40px;
+  width: 330px;
+  background-color: aqua;
+  float: left;
+}
+aside {
+  margin-right: 10px;
+  padding: 20px;
+  width: 1150px;
+  height: 900px;
+  margin-top: 50px;
+  background-color: rgb(202, 154, 226);
+  float: right;
+}
+
+.footer {
+  margin-top: 250px;
+  margin-left: 380px;
+  width: 200px;
+  height: 50px;
+  background-color: aquamarine;
+  text-align: center;
+}

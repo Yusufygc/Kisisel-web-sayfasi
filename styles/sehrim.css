@@ -122,48 +122,50 @@
   margin: 40px;
   margin-top: 20px;
 }
+
+#koramazVadi {
+  background-color: rgb(255, 0, 170);
+  width: 500px;
+  height: 380px;
+  padding: 15px;
+  margin: 40px;
+  margin-top: 20px;
+}
 .class-9 {
   background-color: aqua;
-  width: 1000px;
-  height: 130px;
+  width: 950px;
+  height: 370px;
   padding: 15px;
   margin: 15px;
+  margin-right: 50px;
+
+  float: right;
 }
+
 .class-10 {
   background-color: aqua;
   width: 1000px;
-  height: 150px;
+  height: 700px;
   padding: 15px;
-  margin: 15px;
+  margin-left: 280px;
+  margin-right: 150px;
+}
+#ks {
+  margin: 30px;
+}
+#stadyum {
+  margin: 40px;
 }
 .class-11 {
   background-color: aqua;
   width: 1000px;
-  height: 170px;
-  padding: 15px;
-  margin: 15px;
-}
-.class-12 {
-  background-color: aqua;
-  width: 1000px;
-  height: 220px;
-  padding: 15px;
-  margin: 15px;
-}
-.class-13 {
-  background-color: aqua;
-  width: 1000px;
-  height: 290px;
-  padding: 15px;
-  margin: 15px;
-}
-.class-14 {
-  background-color: aqua;
-  width: 1000px;
   height: 370px;
   padding: 15px;
-  margin: 15px;
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 150px;
 }
-.class-15 {
+
+.class-12 {
   background-color: rgb(238, 244, 244);
 }
