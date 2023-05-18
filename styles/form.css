@@ -1,0 +1,61 @@
+.body {
+  background-color: rgba(24, 59, 185, 0.675);
+}
+
+.baslik {
+  text-align: center;
+}
+
+.form {
+  color: white;
+  text-align: center;
+  background-color: rgba(24, 59, 185, 0.675);
+  width: 500px;
+  height: 670px;
+  margin: auto;
+  padding-left: 70px;
+  padding-right: 50px;
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+div.temelislemler {
+  text-align: center;
+  background-color: rgba(29, 197, 216, 0.305);
+  width: 320px;
+  height: 130px;
+  margin: 25px;
+  padding: 5px;
+}
+
+div.cinsiyet {
+  text-align: center;
+  background-color: rgba(29, 197, 216, 0.305);
+  width: 320px;
+  height: 50px;
+  margin: 25px;
+  padding: 11px;
+}
+
+div.mesaj {
+  text-align: center;
+  margin: 25px;
+  background-color: rgba(29, 197, 216, 0.305);
+  width: 320px;
+  height: 60px;
+}
+
+div.secim {
+  margin: 25px;
+  background-color: rgba(29, 197, 216, 0.305);
+  width: 320px;
+  height: 180px;
+}
+
+div.alan {
+  text-align: center;
+  margin: 25px;
+  margin-top: -20px;
+  width: 320px;
+  height: 60px;
+}

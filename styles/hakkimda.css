@@ -1,3 +1,41 @@
-#ıd {
-  background-color: darkorchid;
+.baslik {
+  text-align: center;
+  background-color: aquamarine;
+  margin-top: 25px;
+}
+
+.girisparag {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: coral;
+}
+
+.hobiler {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgb(191, 219, 151);
+}
+.sporlar {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgb(191, 219, 151);
+}
+.etkinlikler {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgb(191, 219, 151);
+}
+#footer {
+  background-color: rgb(96, 181, 204);
+  text-align: center;
+}
+#carouselExampleCaptions {
+  margin-bottom: 50px;
+  margin-left: 325px;
+  margin-right: 325px;
+}
+#carouselExampleCaptions1 {
+  margin-bottom: 50px;
+  margin-left: 325px;
+  margin-right: 325px;
 }

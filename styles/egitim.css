@@ -1,5 +1,4 @@
 header {
-  margin-top: 50px;
   background-color: aquamarine;
 }
 
@@ -25,9 +24,9 @@ section {
   float: left;
 }
 aside {
-  margin-right: 10px;
+  margin-right: 20px;
   padding: 20px;
-  width: 1150px;
+  width: 1000px;
   height: 900px;
   margin-top: 50px;
   background-color: rgb(202, 154, 226);

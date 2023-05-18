@@ -1,10 +1,13 @@
 #arkaplan {
   background-color: khaki;
-  width: 1500px;
+  width: 1300px;
   margin: 50px;
+  margin-left: 120px;
+  margin-top: 0px;
+  font-size: 20px;
 }
 
 #resim {
   margin: 50px;
-  margin-left: 450px;
+  margin-left: 400px;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>İletişim</title>
-    <link rel="stylesheet" href="styles/iletisim.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,29 +13,201 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yusuf YAĞCI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">İletişim</a>
+            <a class="nav-link" href="2_hakkimda.html">Hakkımda</a>
+            <a class="nav-link" href="3_egitim.html">Eğitimim</a>
+            <a class="nav-link" href="4_sehrim.html">Şehrim</a>
+            <a class="nav-link" href="5_ilgiAlanlarim.html">İlgi Alanlarım</a>
+            <a class="nav-link" href="6_mirasimiz.html">Mirasımız</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="baslik">
       <h1>İLETİŞİM SAYFASI</h1>
       <p>
         İletişime geçmek için lütfen aşağıda belirtilen işlemleri
         gerçekleştiriniz.
       </p>
     </div>
-    <form action="iletisim.php" method="post">
-      <label for="adi">Adı :</label>
-      <input type="text" name="adi" /><br />
-      <label for="soyadi">Soyadı :</label>
-      <input type="text" name="soyadi" /><br />
-      <input type="submit" value="GÖNDER" />
-      <br /><br />
-      <p>Hangi konu hakkında iletişime geçmek istersiniz ?</p>
-      <input type="checkbox" name="ders1" value="Html" />Html kullanımı<br />
-      <input type="checkbox" name="ders2" value="CSS" />CSS kullanımı <br />
-      <input type="checkbox" name="personal1" value="person1" />hakkımda
-    </form>
-    <div style="text-align: center">
-      <a href="1_girisSayfasi.html" style="font-size: 20px"
-        >Giriş sayfasına dön</a
+    <div class="form">
+      <form
+        action="iletisim.php"
+        method="post"
+        onsubmit="return validateForm()"
       >
+        <div class="temelislemler">
+          <table>
+            <tr>
+              <td>
+                <label for="isimsoyisim">İsim Soyisim : </label> <br />
+                <br />
+              </td>
+              <td>
+                <input type="text" id="isimsoyisim" name="isim-soyisim" />
+                <br /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mail"> E-posta : </label> <br /></td>
+              <td><input type="text" id="mail" name="e-posta" /> <br /></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="cinsiyet">
+          <table>
+            <tr>
+              <td><label for="cinsiyet"> cinsiyet:</label></td>
+              <td>
+                <input
+                  type="radio"
+                  name="cinsiyet"
+                  value="erkek"
+                  checked
+                />Erkek<br />
+              </td>
+              <td><input type="radio" name="cinsiyet" value="kadin" />Kadın</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="secim">
+          <label for="begeni"> Sitede beğendiğiniz sayfalar.</label>
+          <ul class="liste" style="list-style-type: none">
+            <li>
+              <input
+                type="checkbox"
+                name="Hakkimda"
+                value="Hakkimda"
+              />Hakkımda<br />
+            </li>
+            <li>
+              <input type="checkbox" name="Sehrim" value="Sehrim" />Şehrim
+              <br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="Ilgialanlarim"
+                value="Ilgialanlarim"
+              />İlgi Alanlarım<br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="Mirasimiz"
+                value="Mirasimiz"
+              />Mirasımız<br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="Iletisim"
+                value="Iletisim"
+              />İletişim<br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="hicbiri"
+                id="secimkontrol"
+                value="hicbiri"
+              />Hiçbiri<br />
+            </li>
+          </ul>
+        </div>
+
+        <div class="alan">
+          <label for="alan"></label>
+          <select
+            name="dil"
+            id="dil"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Hangisini öğrenmek istersiniz ?</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="php">PHP</option>
+            <option value="javascript">JAVASCRIPT</option>
+            <option value="hic">HİÇBİRİ</option>
+          </select>
+        </div>
+
+        <div class="mesaj">
+          <table>
+            <tr>
+              <td><label for="mesaj">Mesajınız :</label></td>
+              <td><textarea name="mesaj" id="mesaj" cols="27"></textarea></td>
+            </tr>
+          </table>
+        </div>
+        <button type="submit" class="btn btn-light">Gönder</button>
+        <button type="reset" value="BURAYA TIKLAYIN!" class="btn btn-danger">
+          Sıfırla
+        </button>
+      </form>
     </div>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("isimsoyisim").value;
+        var email = document.getElementById("mail").value;
+        /*var checkbox = document.getElementById("secimkontrol");*/
+        var select = document.getElementById("dil");
+        var textarea = document.getElementById("mesaj").value;
+
+        if (name == "") {
+          alert("İsim alanı boş bırakılamaz.");
+          return false;
+        }
+
+        if (email == "") {
+          alert("E-posta alanı boş bırakılamaz.");
+          return false;
+        }
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Geçerli bir e-posta adresi giriniz.");
+          return false;
+        }
+
+        /*if (!checkbox.checked) {
+          alert(
+            "Lütfen sevdiğiniz sayfaları işaretleyiniz.Sevmediyseniz hiçbirini seçeneğini işaretleyiniz."
+          );
+          return false;
+        }*/
+
+        if (select.value === "") {
+          alert("Öğrenmek istediğiniz bir seçenek seçiniz.");
+          return false;
+        }
+
+        if (textarea.trim() === "") {
+          alert("Yorumlarınız benim için çok önemli.Lütfen yorum yapınız.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
   </body>
 </html>
