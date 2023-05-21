@@ -1,33 +1,40 @@
-.body {
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-}
-
 .box {
-  max-width: 450px;
+  max-width: 550px;
   width: 100%;
-  max-height: 150px;
+  max-height: 550px;
   height: 100%;
   border: 5px solid #01415c;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
   margin: auto;
-  top: 32%;
-  left: 35%;
+  top: 7%;
+  left: 29%;
   padding-top: 40px;
-  padding-left: 15px;
+  padding-left: 50px;
   padding-right: 15px;
   position: absolute;
   background: wheat;
 }
-@media screen and (max-width: 700px) {
+
+.donus {
+  margin-top: 45px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.donus a {
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
   .box {
     width: auto;
     height: auto;
     margin: auto;
-    top: 40%;
-    left: 5%;
+    top: 5%;
+    left: 1%;
     padding: 15px;
   }
 }

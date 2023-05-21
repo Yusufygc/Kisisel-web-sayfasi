@@ -24,7 +24,7 @@ section {
 
 .carousel-item img {
   /*sliderler için*/
-  padding: 0 30%;
+  padding: 0 25%;
 }
 
 .baslik {
@@ -101,6 +101,7 @@ header {
   font-size: 30px;
   transition: all 0.5s ease-in-out;
   margin-bottom: 70px;
+  margin-top: -90px;
 }
 .ben h2:hover {
   color: #000000;
@@ -218,30 +219,17 @@ header {
   border: 2px solid #24caac;
   font-size: 30px;
 }
-
-/*
-.sporlar {
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: rgb(191, 219, 151);
+@media screen and (max-width: 900px) {
+  .anasayfa {
+    display: block;
+  }
+  .anasayfa .resim {
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border: none;
+    margin-top: 50px;
+    margin-left: -5px;
+  }
 }
-.etkinlikler {
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: rgb(191, 219, 151);
-}
-.footer {
-  background-color: rgb(96, 181, 204);
-  text-align: center;
-}
-#carouselExampleCaptions {
-  margin-bottom: 50px;
-  margin-left: 325px;
-  margin-right: 325px;
-}
-#carouselExampleCaptions1 {
-  margin-bottom: 50px;
-  margin-left: 325px;
-  margin-right: 325px;
-}
-*/

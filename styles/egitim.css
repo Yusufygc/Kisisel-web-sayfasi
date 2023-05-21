@@ -6,7 +6,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
 }
 .body {
   font-family: "Montserrat", sans-serif;
@@ -70,9 +69,11 @@ header {
   width: 100%;
   margin-bottom: 50px;
 }
-
-#anasayfa .hakkımda {
+#anasayfa .hakkımda .hakkımdabaslik {
   text-align: center;
+}
+#anasayfa .hakkımda {
+  text-align: left;
   padding: 0 200px 0 50px;
   color: azure;
   border: 3px solid #24caac;
@@ -80,7 +81,9 @@ header {
   margin: 0 50px 90px 50px;
   font-size: 25px;
 }
-
+#anasayfa .hakkımda p a {
+  text-decoration: none;
+}
 #anasayfa .resim img {
   flex-wrap: wrap;
   object-fit: cover;
@@ -113,6 +116,14 @@ header {
 .ibilgilerbaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ibilgilerbaslik:hover {
+  color: #fdffff;
+  background: transparent;
+
+  font-family: "Times New Roman", Times, serif;
 }
 
 .kisiselbilgiler {
@@ -126,8 +137,15 @@ header {
 .kisiselbilgilerbaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
+.kisiselbilgilerbaslik:hover {
+  color: #fdffff;
+  background: transparent;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
+}
 .yetenekler {
   width: 30%;
   height: 30%;
@@ -139,6 +157,14 @@ header {
 .yetenekbaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.yetenekbaslik:hover {
+  color: #fdffff;
+  background: transparent;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #sektor {
@@ -158,6 +184,14 @@ header {
 .isdeneyimibaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.isdeneyimibaslik:hover {
+  color: #fdffff;
+  background: transparent;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
 }
 .egitim {
   width: 100%;
@@ -171,6 +205,14 @@ header {
 .egitimbaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.egitimbaslik:hover {
+  color: #fdffff;
+  background: transparent;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
 }
 .sertifikalar {
   width: 100%;
@@ -183,8 +225,56 @@ header {
 .sertifikabaslik {
   font-size: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sertifikabaslik:hover {
+  color: #fdffff;
+  background: transparent;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 table tr td {
   padding: 1rem;
+}
+table tr:nth-of-type(odd) {
+  background: hsla(170, 80%, 33%, 0.137);
+}
+table tr:nth-of-type(2n) {
+  background: hsla(170, 73%, 48%, 0.192);
+}
+table tr .konu {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  #anasayfa {
+    display: block;
+  }
+  #iletisim {
+    display: block;
+  }
+  .iletisimbilgileri {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .kisiselbilgiler {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .yetenekler {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
