@@ -10,175 +10,202 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body style="font-size: 17px">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Yusuf YAĞCI</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Eğitimim</a>
-            <a class="nav-link" href="2_hakkimda.html">Hakkımda</a>
-            <a class="nav-link" href="4_sehrim.html">Şehrim</a>
-            <a class="nav-link" href="5_ilgiAlanlarim.html">İlgi Alanlarım</a>
-            <a class="nav-link" href="6_mirasimiz.html">Mirasımız</a>
-            <a class="nav-link" href="7_iletisim.html">İletişim</a>
+  <body class="body">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">YUSUF YAĞCI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Eğitimim</a
+              >
+              <a class="nav-link" href="2_hakkimda.html">Hakkımda</a>
+              <a class="nav-link" href="4_sehrim.html">Şehrim</a>
+              <a class="nav-link" href="5_ilgiAlanlarim.html">İlgi Alanlarım</a>
+              <a class="nav-link" href="6_mirasimiz.html">Mirasımız</a>
+              <a class="nav-link" href="7_iletisim.html">İletişim</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <header style="text-align: center">
-      <h1>MUHAMMED YUSUF YAĞCI</h1>
-      <p style="font-size: 30px">Bilgisayar mühendisi</p>
+      </nav>
     </header>
 
-    <figure>
-      <img
-        src="resimler/images.jpeg"
-        alt="profil fotoğrafı"
-        style="width: 400px"
-        style="height: 400px"
-      />
-    </figure>
-    <div id="hakkımda">
-      <h2>Hakkımda</h2>
-      <p>
-        Ben Muhammed Yusuf YAĞCI. 27/04/2002 tarihinde Kayseri/Melikgazi'de
-        doğdum kayseriliyim. <br />
-        Sakarya üniversitesi bilgisayar mühendisliği 1.sınıf öğrencisiyim.
-        <br />Daha detaylı bilgi isterseniz
-        <a href="2_hakkimda.html">hakkımda</a> sayfasından ulaşabilirsiniz.
-      </p>
-      <hr />
-    </div>
-    <section>
-      <hr />
-      <h2>İletişim bilgileri</h2>
-      <p><b>cep no :</b>05443856732</p>
-      <p><b>E-mail :</b>yusufyagci1234@gmail.com</p>
-      <p><b>Adres :</b>Kemalpaşa mah/7.sokak/Serdivan/Sakarya</p>
-      <hr />
-
-      <h2>Kişisel Bilgiler</h2>
-      <p><b>Doğum Tarihi :</b>27/04/2002 Kayseri</p>
-      <p><b>Medeni durum :</b>Bekar</p>
-      <p><b>Askerlik :</b>yapılmadı</p>
-      <p><b>Ehliyet :</b>B(2021)</p>
-
-      <hr />
-      <h2>Yetenekler</h2>
-      <p><b>ingilizce :</b>B1-B2</p>
-      <p><b>python :</b>başlangıç-orta</p>
-      <p><b>c++ :</b>başlangıç-orta</p>
-      <p><b>c# :</b>başlangıç-orta</p>
-      <p><b>Html-CSS-JS :</b>başlangıç-orta</p>
-      <p><b>Görüntü işleme :</b>başlangıç-orta</p>
-      <p><b>Derin öğrenme :</b>başlangıç-orta</p>
-      <hr />
+    <section id="giris">
+      <div class="isimsoyisim">
+        <h1>MUHAMMED YUSUF YAĞCI</h1>
+        <p>
+          Bilgisayar mühendisi <br />
+          CV
+        </p>
+      </div>
     </section>
 
-    <aside>
-      <hr />
-      <h2>İŞ DENEYİMİ</h2>
+    <section id="anasayfa">
+      <div class="resim">
+        <img src="resimler/kendim.jpg" alt="profil fotoğrafı" />
+      </div>
 
-      <table style="width: 100%">
-        <tr>
-          <td>Görev :</td>
-          <td>Görüntü işleme</td>
-          <td>Şirket Adı :</td>
-          <td>SUBU-AI</td>
-        </tr>
-        <tr>
-          <td>Çalışma Tarihi :</td>
-          <td>2020-2021</td>
-          <td>Görev ve Sorumluluk :</td>
-          <td>
-            Sağlıkta yapay zeka teknofest yarışması kapsamında DICOM veri
-            tipindeki verilerde openCV kütüphanesi kullanarak veriyi işleyip
-            derin öğrenme modelinin öğrenme işlemini yapması ve veri boyutunun
-            küçültülüp png haline getirilmesi.Finalist olup Türkiye 7.si olarak
-            yarışmayı tamamladık.
-          </td>
-        </tr>
-        <tr>
-          <td>Görev :</td>
-          <td>Görüntü işleme ve veri etiketleme</td>
-          <td>Şirket Adı :</td>
-          <td>ForesighTech</td>
-        </tr>
-        <tr>
-          <td>Çalışma Tarihi :</td>
-          <td>2021-2022</td>
-          <td>Görev ve Sorumluluk :</td>
-          <td>
-            Ulaşımda yapay zeka teknofest yarışması kapsamında uçan arabaların
-            iniş yapabileciği alanların ,araçların ve insanların tespiti sonucu
-            kazasız belasız bir şekilde iniş yapması.Yarışmayı Türkiye 3.sü
-            olarak tamamladık.
-          </td>
-        </tr>
-      </table>
+      <div class="hakkımda">
+        <div class="hakkımdabaslik"><h2>Hakkımda</h2></div>
 
-      <hr />
-      <h2>EĞİTİM</h2>
+        <p>
+          Ben Muhammed Yusuf YAĞCI. 27/04/2002 tarihinde Kayseri/Melikgazi'de
+          doğdum kayseriliyim. Sakarya üniversitesi bilgisayar mühendisliği
+          1.sınıf öğrencisiyim. Daha detaylı bilgi isterseniz
+          <a href="2_hakkimda.html">hakkımda</a> sayfasından ulaşabilirsiniz.
+        </p>
+      </div>
+    </section>
 
-      <table style="width: 100%">
-        <tr>
-          <td>lİSE :</td>
-          <td>Kayseri Nuh Mehmet Baldöktü Anadolu Lisesi</td>
-          <td>Mezuniyet Tarihi :</td>
-          <td>2020</td>
-          <td>Diploma Notu :</td>
-          <td>94,3</td>
-        </tr>
-        <tr>
-          <td>ÜNİVERSİTE VE BÖLÜM :</td>
-          <td>Sakarya Üniversitesi Bilgisayar mühendisliği</td>
-          <td>Mezuniyet Tarihi :</td>
-          <td>Şu an 1.sınıfta okuyorum</td>
-          <td>Diploma Notu :</td>
-          <td>ilk dönem notum 2,93</td>
-        </tr>
-      </table>
+    <section id="iletisim">
+      <div class="iletisimbilgileri">
+        <div class="ibilgilerbaslik">
+          <h2>İletişim bilgileri</h2>
+        </div>
 
-      <hr />
-      <h2>SERTİFİKALAR</h2>
+        <p><b>cep no :</b>05443856732</p>
+        <p><b>E-mail :</b>yusufyagci1234@gmail.com</p>
+        <p><b>Adres :</b>Kemalpaşa mah/7.sokak/Serdivan/Sakarya</p>
+      </div>
 
-      <table style="width: 100%">
-        <tr>
-          <td>Kurs adı :</td>
-          <td>A-Z ye derin öğrenme</td>
-          <td>Tarihi :</td>
-          <td>2022</td>
-          <td>Kurum :</td>
-          <td>BTK akademi</td>
-        </tr>
-        <tr>
-          <td>Kurs adı :</td>
-          <td>A-Z ye Görüntü işleme</td>
-          <td>Tarihi :</td>
-          <td>2023</td>
-          <td>Kurum :</td>
-          <td>udemy/subu-teknoloji koordinatörlüğü</td>
-        </tr>
-      </table>
-      <hr />
-      <div class="footer">
-        <a href="1_girisSayfasi.html" style="font-size: 20px"
-          >Giriş sayfasına dön</a
-        >
+      <div class="kisiselbilgiler">
+        <div class="kisiselbilgilerbaslik">
+          <h2>Kişisel Bilgiler</h2>
+        </div>
+
+        <p><b>Doğum Tarihi :</b>27/04/2002 Kayseri</p>
+        <p><b>Medeni durum :</b>Bekar</p>
+        <p><b>Askerlik :</b>yapılmadı</p>
+        <p><b>Ehliyet :</b>B(2021)</p>
+      </div>
+
+      <div class="yetenekler">
+        <div class="yetenekbaslik">
+          <h2>Yetenekler</h2>
+        </div>
+
+        <p><b>ingilizce :</b>B1-B2</p>
+        <p><b>python :</b>başlangıç-orta</p>
+        <p><b>c++ :</b>başlangıç-orta</p>
+        <p><b>c# :</b>başlangıç-orta</p>
+        <p><b>Html-CSS-JS :</b>başlangıç-orta</p>
+        <p><b>Görüntü işleme :</b>başlangıç-orta</p>
+        <p><b>Derin öğrenme :</b>başlangıç-orta</p>
+      </div>
+    </section>
+
+    <aside id="sektor">
+      <div class="isdeneyimi">
+        <div class="isdeneyimibaslik">
+          <h2>İŞ DENEYİMİ</h2>
+        </div>
+
+        <table style="width: 100%">
+          <tr>
+            <td class="konu">Görev :</td>
+            <td>Görüntü işleme</td>
+            <td class="konu">Şirket Adı :</td>
+            <td>SUBU-AI</td>
+          </tr>
+          <tr>
+            <td class="konu">Çalışma Tarihi :</td>
+            <td>2020-2021</td>
+            <td class="konu">Görev ve Sorumluluk :</td>
+            <td>
+              Sağlıkta yapay zeka teknofest yarışması kapsamında DICOM veri
+              tipindeki verilerde openCV kütüphanesi kullanarak veriyi işleyip
+              derin öğrenme modelinin öğrenme işlemini yapması ve veri boyutunun
+              küçültülüp png haline getirilmesi.Finalist olup Türkiye 7.si
+              olarak yarışmayı tamamladık.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="konu">Görev :</td>
+            <td>Görüntü işleme ve veri etiketleme</td>
+            <td class="konu">Şirket Adı :</td>
+            <td>ForesighTech</td>
+          </tr>
+          <tr>
+            <td class="konu">Çalışma Tarihi :</td>
+            <td>2021-2022</td>
+            <td class="konu">Görev ve Sorumluluk :</td>
+            <td>
+              Ulaşımda yapay zeka teknofest yarışması kapsamında uçan arabaların
+              iniş yapabileciği alanların ,araçların ve insanların tespiti
+              sonucu kazasız belasız bir şekilde iniş yapması.Yarışmayı Türkiye
+              3.sü olarak tamamladık.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="egitim">
+        <div class="egitimbaslik">
+          <h2>EĞİTİM</h2>
+        </div>
+
+        <table style="width: 100%">
+          <tr>
+            <td class="konu">LİSE :</td>
+            <td>Kayseri Nuh Mehmet Baldöktü Anadolu Lisesi</td>
+            <td class="konu">Mezuniyet Tarihi :</td>
+            <td>2020</td>
+            <td class="konu">Diploma Notu :</td>
+            <td>94,3</td>
+          </tr>
+          <tr>
+            <td class="konu">ÜNİVERSİTE VE BÖLÜM :</td>
+            <td>Sakarya Üniversitesi Bilgisayar mühendisliği</td>
+            <td class="konu">Mezuniyet Tarihi :</td>
+            <td>Şu an 1.sınıfta okuyorum</td>
+            <td class="konu">Diploma Notu :</td>
+            <td>ilk dönem notum 2,93</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="sertifikalar">
+        <div class="sertifikabaslik">
+          <h2>SERTİFİKALAR</h2>
+        </div>
+
+        <table style="width: 100%">
+          <tr>
+            <td class="konu">Kurs adı :</td>
+            <td>A-Z ye derin öğrenme</td>
+            <td class="konu">Tarihi :</td>
+            <td>2022</td>
+            <td class="konu">Kurum :</td>
+            <td>BTK akademi</td>
+          </tr>
+          <tr>
+            <td class="konu">Kurs adı :</td>
+            <td>A-Z ye Görüntü işleme</td>
+            <td class="konu">Tarihi :</td>
+            <td>2023</td>
+            <td class="konu">Kurum :</td>
+            <td>udemy/subu-teknoloji koordinatörlüğü</td>
+          </tr>
+        </table>
       </div>
     </aside>
   </body>

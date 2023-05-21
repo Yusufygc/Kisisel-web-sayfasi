@@ -1,21 +1,115 @@
 /*LOGİN SAYFASI STİLLERİ*/
-.body {
-  /*background-image: url("img/arkaplan.jpg");*/
-  /* background-repeat: no-repeat;*/
-  /* background-size: cover;*/
-  /*background-attachment: fixed;*/
-  background-color: #252323;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*kutu etrafını şekillendirior*/
+  font-family: sans-serif;
 }
-.login {
-  text-align: center;
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  background-color: #252323;
+body {
+  display: grid; /*ekranı 2 ye böler*/
+  height: 100vh; /*ekranın tamamını kaplar*/
+  place-items: center; /*ekranın ortasına alır*/
+  background: linear-gradient(
+    to right,
+    #3a99c5 0%,
+    #aa2626 100%
+  ); /*arka plan rengi*/
+}
+
+.container {
+  background: linear-gradient(#bedbe7 0%, #b19b73 100%); /*arka plan rengi*/
+  max-width: 350px; /*en fazla 350px olacak*/
+  width: 100%; /*tamamı doldursun*/
+  padding: 25px 30px; /*25px üstten aşağı 30px soldan sağa*/
+  border-radius: 5px; /*köşeleri yuvarla*/
+  margin-top: -50px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container form .input-box input {
+  background: linear-gradient(#dfecf1 0%, #f0e9dd 100%);
+}
+
+.container form .title {
+  /*bu başlıkları yazarken aradaki boşluklar dikkat et form.title yazmışım 5 dk aradım sıkıntı ne diye*/
+  font-size: 30px;
+  font-weight: 600; /*kalınlık*/
+  margin: 20px 0 10px 0; /*20px üstten aşağı 10px soldan 0 sağ 0*/
+  position: relative; /*pozisyonu ayarla sabitler sağa sola gitmez*/
+}
+
+.container form .title::before {
+  content: "";
   position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-left: -170px;
-  margin-top: -150px;
-  color: aliceblue;
+  height: 4px;
+  width: 33px;
+  bottom: 2px;
+  left: 0;
+  border-radius: 5px;
+  background: #1da1f2;
+}
+
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+}
+
+.container form .underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: red;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left; /*scaleX(0) ile 0 dan başlayıp 1 e kadar gider*/
+  transition: all 0.3s ease; /*0.3 saniyede geçiş yapar*/
+}
+
+.container form .input-box input:focus ~ .underline:after,
+.container form .input-box input:valid ~ .underline:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/*.container form .input-box input:valid ~ .underline:after bu arkadaş yazma işleminden sonra alttaki çizginin kırmızı kalmasını sağlayacak*/
+
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"] {
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer; /*üzerine gelince işaret çıkar*/
+  background: rgb(70, 43, 192);
+  transition: all 0.3s ease; /*0.3 saniyede geçiş yapar*/
+}
+.container form .input-box input[type="submit"]:hover {
+  letter-spacing: 1px; /*harfler arası boşluk*/
+  background: rgba(136, 16, 16, 0.658);
+  font-weight: bold;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
 }

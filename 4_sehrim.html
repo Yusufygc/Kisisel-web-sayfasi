@@ -10,491 +10,539 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-      .mySlides {
-        display: none;
-        width: 500px;
-        height: 400px;
-        margin-left: 370px;
-      }
-      .button_left {
-        position: absolute;
-        top: 50%;
-        left: 18%;
-        transform: translate(0%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #555;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        opacity: 0.5;
-      }
-      .button_right {
-        position: absolute;
-        top: 50%;
-        right: 21%;
-        transform: translate(0%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #555;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        opacity: 0.5;
-      }
-    </style>
   </head>
 
-  <body class="body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Yusuf YAĞCI</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Şehrim</a>
-            <a class="nav-link" href="2_hakkimda.html">Hakkımda</a>
-            <a class="nav-link" href="3_egitim.html">Eğitimim</a>
-            <a class="nav-link" href="5_ilgiAlanlarim.html">İlgi Alanlarım</a>
-            <a class="nav-link" href="6_mirasimiz.html">Mirasımız</a>
-            <a class="nav-link" href="7_iletisim.html">İletişim</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">YUSUF YAĞCI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Şehrim</a>
+              <a class="nav-link" href="2_hakkimda.html">Hakkımda</a>
+              <a class="nav-link" href="3_egitim.html">Eğitimim</a>
+              <a class="nav-link" href="5_ilgiAlanlarim.html">İlgi Alanlarım</a>
+              <a class="nav-link" href="6_mirasimiz.html">Mirasımız</a>
+              <a class="nav-link" href="7_iletisim.html">İletişim</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <section id="slider1">
+      <div class="Kayseri">
+        <a href="https://www.kayseri.bel.tr/">KAYSERİ</a>
       </div>
-    </nav>
-    <div class="class-1">
-      <h1>ŞEHRİM SAYFASINA HOŞGELDİNİZ</h1>
-    </div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
 
-    <div class="class-2"><a href="https://www.kayseri.bel.tr/">KAYSERİ</a></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="resimler/erciyes.jpeg"
+              class="d-block w-100"
+              alt="erciyes"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Erciyes Dağı</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="resimler/kale3.jpeg"
+              class="d-block w-100"
+              alt="kayseri kalesi"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kayseri Kalesi</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resimler/mantı.jpeg" class="d-block w-100" alt="mantı" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kayseri Mantısı</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="resimler/meydan2.jpeg"
+              class="d-block w-100"
+              alt="Cumhuriyet Meydanı"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cumhuriyet Meydanı</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="resimler/pastrıma.jpeg"
+              class="d-block w-100"
+              alt="pastırma"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kayseri Pastırması</h5>
+            </div>
+          </div>
+        </div>
 
-    <div
-      class="w3-content w3-display-container"
-      style="max-width: 800px"
-      style="max-height: 500px"
-      style="position: relative"
-    >
-      <img class="mySlides" src="resimler/erciyes.jpeg" style="width: 100%" />
-      <img class="mySlides" src="resimler/kale3.jpeg" style="width: 100%" />
-      <img class="mySlides" src="resimler/erciyes2.jpeg" style="width: 100%" />
-      <img class="mySlides" src="resimler/meydan2.jpeg" style="width: 100%" />
-      <img class="mySlides" src="resimler/pastrıma.jpeg" style="width: 100%" />
-      <img class="mySlides" src="resimler/mantı.jpeg" style="width: 100%" />
-
-      <button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="button_right" onclick="plusDivs(1)">&#10095;</button>
-    </div>
-
-    <div class="class-3">
-      <p>
-        <b>KAYSERİ</b> (Yunanca: Καισάρεια, romanize: Kaisareia), Türkiye'nin
-        bir ilidir.Türkiye'nin toplam nüfus bakımından en kalabalık 14. şehri
-        olup yüzölçümü olarak Türkiye'nin en büyük 8.ilidir. İç Anadolu’nun
-        büyük ticaret ve sanayi merkezidir.
-      </p>
-      <p>
-        Orta Kızılırmak Bölümünde, Erciyes Dağı'nın eteklerinde bir ildir. Kuzey
-        ve kuzeybatıda Yozgat, kuzey ve kuzeydoğuda Sivas, doğuda Kahramanmaraş,
-        güneyde Adana, güneybatıda Niğde, batıda ise Nevşehir illeriyle
-        çevrilidir. Dünyanın en eski şehirlerinden biri olan Kayseri , klasik
-        çağlarda Kapadokya adı verilen bölgededir. Kızılırmak'ın güneyinde
-        bulunan bu bölge, Tuz Gölü'nden Fırat Nehri' ne kadar uzanır. İpek Yolu
-        buradan geçer. Bölge, pek çok uygarlığın beşiği olmuştur.
-      </p>
-      <p>
-        Kayseri kentinin adı Latince Caesarea, Yunanca καισαρεία (kaysaria) adı
-        Arapça biçiminden Türkçeleştirilmiştir. Eski isimleri Mazaka ve
-        Kaisareia (Fransızca Césarée)'dır.
-      </p>
-      <p>
-        "Kayser" veya "kaysar" (Arapça ve Osmanlıca: قيصر), Roma ve Doğu Roma
-        (Bizans) imparatorlarına verilen Caesar (Yunanca: καισαρ kaisar)
-        unvanının İslam ülkelerinde kullanılan biçimidir. Osmanlı sultanları II.
-        Mehmed'ten başlayarak resmî sıfatları arasında Kayser-i Rum unvanını da
-        kullanmışlardır.
-      </p>
-      <p>
-        Kayseri il nüfusu: 1.441.523 (2022 sonu). İlin yüzölçümü 16.969 km2'dir.
-        İlde km2'ye 85 kişi düşmektedir. (Yoğunluğun en fazla olduğu ilçe: 890
-        kişi ile Melikgazi’dir)
-      </p>
-
-      <div>
-        <h4>Mutfak</h4>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="selamlama">
+        <h1>ŞEHRİM SAYFASINA HOŞGELDİNİZ</h1>
+      </div>
+    </section>
+    <section id="tanitim">
+      <div class="tanıtımgiris">
         <p>
-          Mantı, pastırma, sucuk, sucuk içi, çemen, fırınağzı, pöç, Kayseri
-          Ketesi, yağ mantısı, Pehli, Yağlama (Şebit Mantısı)'dır. Kabak çiçeği
-          dolması ile içli köfte de yapılır, yöre sarımsak ve baharatlı
-          yemekleri ile tanınır. Ayrıca Nevzine tatlısı da Kayseri'ye özgü bir
-          tatlı çeşididir.
+          <b>KAYSERİ</b> (Yunanca: Καισάρεια, romanize: Kaisareia), Türkiye'nin
+          bir ilidir.Türkiye'nin toplam nüfus bakımından en kalabalık 14. şehri
+          olup yüzölçümü olarak Türkiye'nin en büyük 8.ilidir. İç Anadolu’nun
+          büyük ticaret ve sanayi merkezidir.
+        </p>
+        <p>
+          Orta Kızılırmak Bölümünde, Erciyes Dağı'nın eteklerinde bir ildir.
+          Kuzey ve kuzeybatıda Yozgat, kuzey ve kuzeydoğuda Sivas, doğuda
+          Kahramanmaraş, güneyde Adana, güneybatıda Niğde, batıda ise Nevşehir
+          illeriyle çevrilidir. Dünyanın en eski şehirlerinden biri olan Kayseri
+          , klasik çağlarda Kapadokya adı verilen bölgededir. Kızılırmak'ın
+          güneyinde bulunan bu bölge, Tuz Gölü'nden Fırat Nehri' ne kadar
+          uzanır. İpek Yolu buradan geçer. Bölge, pek çok uygarlığın beşiği
+          olmuştur.
+        </p>
+        <p>
+          Kayseri kentinin adı Latince Caesarea, Yunanca καισαρεία (kaysaria)
+          adı Arapça biçiminden Türkçeleştirilmiştir. Eski isimleri Mazaka ve
+          Kaisareia (Fransızca Césarée)'dır.
+        </p>
+        <p>
+          "Kayser" veya "kaysar" (Arapça ve Osmanlıca: قيصر), Roma ve Doğu Roma
+          (Bizans) imparatorlarına verilen Caesar (Yunanca: καισαρ kaisar)
+          unvanının İslam ülkelerinde kullanılan biçimidir. Osmanlı sultanları
+          II. Mehmed'ten başlayarak resmî sıfatları arasında Kayser-i Rum
+          unvanını da kullanmışlardır.
+        </p>
+        <p>
+          Kayseri il nüfusu: 1.441.523 (2022 sonu). İlin yüzölçümü 16.969
+          km2'dir. İlde km2'ye 85 kişi düşmektedir. (Yoğunluğun en fazla olduğu
+          ilçe: 890 kişi ile Melikgazi’dir)
+        </p>
+
+        <div>
+          <h4 style="font-size: 25px">MUTFAK</h4>
+          <p>
+            Mantı, pastırma, sucuk, sucuk içi, çemen, fırınağzı, pöç, Kayseri
+            Ketesi, yağ mantısı, Pehli, Yağlama (Şebit Mantısı)'dır. Kabak
+            çiçeği dolması ile içli köfte de yapılır, yöre sarımsak ve baharatlı
+            yemekleri ile tanınır. Ayrıca Nevzine tatlısı da Kayseri'ye özgü bir
+            tatlı çeşididir.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="turizmbaslik"><h3>TURİZM</h3></section>
+
+    <section id="gezmelik">
+      <div class="muze">
+        <img class="muze1" src="resimler/ataEv.jpeg" alt="Atatürk Evi Müzesi" />
+        <img
+          class="muze3"
+          src="resimler/gupgupoglu.jpg"
+          alt="Güpgüpoğlu Konağı"
+        />
+
+        <img
+          class="muze2"
+          src="resimler/milliMucadele.jpeg"
+          alt="milli mücadele müzesi"
+        />
+      </div>
+
+      <div class="turizm">
+        <h4 style="font-size: 35px">Müzeler</h4>
+        <p>
+          Aşağıdaki seçeneklere tıklayarak müzeler hakkında daha detaylı
+          bilgiler öğrenebilirsiniz
+        </p>
+
+        <div class="muzeliste">
+          <ul>
+            <li>
+              <a
+                href="https://tr.wikipedia.org/wiki/Kayseri_Arkeoloji_M%C3%BCzesi"
+                >Kayseri Arkeoloji Müzesi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Evi_M%C3%BCzesi_(Kayseri)"
+                >Atatürk Evi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.kulturportali.gov.tr/turkiye/kayseri/gezilecekyer/gupgupoglu-konagi-etnografya-muzesi"
+                >Güpgüpoğlu Konağı Etnoğrafya Müzesi></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tr.wikipedia.org/wiki/Gevher_Nesibe_%C5%9Eifaiyyesi"
+                >Selçuklu Uygarlığı Müzesi (Gevher Nesibe Tıp Tarihi Müzesi)</a
+              >
+            </li>
+            <li>
+              <a href="http://www.kayseri.gov.tr/milli-mucadele-muzesi"
+                >Kayseri Lisesi Milli Mücadele Müzesi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://kayseri.ktb.gov.tr/TR-55033/ahi-evran-esnaf-ve-sanatkarlar-muzesi.html"
+              >
+                Ahi Evran Sanatkârlar Müzesi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.kulturportali.gov.tr/turkiye/kayseri/gezilecekyer/kadir-has-kent-ve-mimar-sinan-muzesi"
+                >Kadir Has Kent ve Mimar Sinan Müzesi</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kayseri.gov.tr/kayseri-ic-kalesi-arkeoloji-muzesi"
+                >Kayseri Kalesi Arkeoloji Müzesi</a
+              >
+            </li>
+            <li>Kayseri Etnoğrafya Müzesi(ilgili web sayfası yoktur)</li>
+            <li>
+              <a
+                href="https://tr.wikipedia.org/wiki/Sultansazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1"
+                >Sultansazlığı Kuş Müzesi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="dag">
+      <div class="erciyes">
+        <div class="ercbaslik">
+          <h4>
+            <a href="https://tr.wikipedia.org/wiki/Erciyes_Da%C4%9F%C4%B1">
+              ERCİYES DAĞI</a
+            >
+          </h4>
+        </div>
+
+        <p>
+          Şehir merkezine yakınlığı ve dünyaca ünlü toz karı ile meşhur Erciyes
+          Dağı, şehrin güney kısmında yer alır. Deniz seviyesinden yüksekliği
+          3.917 metredir. Türkiye'nin büyük dağlarından biri olma özelliğine
+          sahip olan Erciyes, yıl içerisinde kayak yapmak için uygun bir alan
+          olarak görülebilir.
+        </p>
+        <p>
+          Türkiye'nin kayak pistine sahip bölgelerinden biridir. Ayrıca sağlık
+          turizmi açısından da, gerek temiz ve yumuşak havası gerekse doğal
+          zengin mineralli kaynak sularıyla sağlık ve kış sporları için
+          uygundur. Var olan Erciyes kayak bölgesi, alt istasyonu deniz
+          seviyesinden yaklaşık 2200 metre yükseklikte olan ve Kayseri’ye
+          yaklaşık 23 kilometre uzaklıkta olan Tekir Yaylası üzerine
+          kurulmuştur. Bol kar alışı ve havasından dolayı kayak mevsimi uzun
+          olan bir dağdır.
+        </p>
+        <p>
+          Ailecek gidilebilecek bir yerdir. Kayak yapmayı bilmiyorsanız bile
+          kızak ile kayabilirsiniz.Kayaktan sonra sıcak bir çay ve sucuk ekmek
+          yiyerek erciyes macerasını zirvede bırakıp unutulmayacak bir anı
+          olarak hafızanıza kazıyabilirsiniz.
         </p>
       </div>
-    </div>
-    <div class="muze">
-      <img
-        id="muze1"
-        src="resimler/ataEv.jpeg"
-        alt="Atatürk Evi Müzesi"
-        width="350px"
-        height="300px"
-      />
+      <div class="erciyesresim">
+        <img src="resimler/Erciyes.jpg" alt="erciyes dağı" />
+      </div>
+    </section>
 
-      <img
-        id="muze2"
-        src="resimler/milliMucadele.jpeg"
-        alt="milli mücadele müzesi"
-        width="350px"
-        height="300px"
-      />
-    </div>
+    <section id="kentormani">
+      <div class="kentormaniresim">
+        <img src="resimler/kentOrmani.jpeg" alt="kıranardı kent ormanı" />
+      </div>
 
-    <div class="class-4">
-      <h3>TURİZM</h3>
-      <h4>Müzeler</h4>
-      <p>
-        Aşağıdaki seçeneklere tıklayarak müzeler hakkında daha detaylı bilgiler
-        öğrenebilirsiniz
-      </p>
-      <ul>
-        <li>
-          <a href="https://tr.wikipedia.org/wiki/Kayseri_Arkeoloji_M%C3%BCzesi"
-            >Kayseri Arkeoloji Müzesi</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Evi_M%C3%BCzesi_(Kayseri)"
-            >Atatürk Evi</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.kulturportali.gov.tr/turkiye/kayseri/gezilecekyer/gupgupoglu-konagi-etnografya-muzesi"
-            >Güpgüpoğlu Konağı Etnoğrafya Müzesi></a
-          >
-        </li>
-        <li>
-          <a href="https://tr.wikipedia.org/wiki/Gevher_Nesibe_%C5%9Eifaiyyesi"
-            >Selçuklu Uygarlığı Müzesi (Gevher Nesibe Tıp Tarihi Müzesi)</a
-          >
-        </li>
-        <li>
-          <a href="http://www.kayseri.gov.tr/milli-mucadele-muzesi"
-            >Kayseri Lisesi Milli Mücadele Müzesi</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://kayseri.ktb.gov.tr/TR-55033/ahi-evran-esnaf-ve-sanatkarlar-muzesi.html"
-          >
-            Ahi Evran Sanatkârlar Müzesi</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.kulturportali.gov.tr/turkiye/kayseri/gezilecekyer/kadir-has-kent-ve-mimar-sinan-muzesi"
-            >Kadir Has Kent ve Mimar Sinan Müzesi</a
-          >
-        </li>
-        <li>
-          <a href="http://www.kayseri.gov.tr/kayseri-ic-kalesi-arkeoloji-muzesi"
-            >Kayseri Kalesi Arkeoloji Müzesi</a
-          >
-        </li>
-        <li>Kayseri Etnoğrafya Müzesi(ilgili web sayfası yoktur)</li>
-        <li>
-          <a
-            href="https://tr.wikipedia.org/wiki/Sultansazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1"
-            >Sultansazlığı Kuş Müzesi</a
-          >
-        </li>
-      </ul>
-    </div>
+      <div class="orman">
+        <div class="ormanbaslik">
+          <h4>
+            <a
+              href="https://www.tripadvisor.com.tr/Attraction_Review-g297984-d14958046-Reviews-KIranardI_Kent_OrmanI-Kayseri_Kayseri_Province.html"
+            >
+              KIRANARDI KENT ORMANI</a
+            >
+          </h4>
+        </div>
+        <p>
+          Kayseri’nin sıcak yaz günlerinde, gece ve gündüz doyumsuz Erciyes ve
+          şehir manzarası sunan Kıranardı Kent Ormanı hisarcık istikametinde
+          olup hem Erciyes’i hem de Hisarcık’ı fotoğraflayabilmek ve Kayseri’nin
+          uzak plan görüntüsünü de görmek mümkündür. Kısaca burası hem piknik
+          yapmak için hem de seyir seyri açısından harika bir mekandır.
+        </p>
+      </div>
+    </section>
+    <section id="kapuzbasi">
+      <div class="selale">
+        <div class="selalebaslik">
+          <h4>
+            <a href="https://www.yahyali.bel.tr/kapuzbasi-selaleleri"
+              >KAPUZBAŞI ŞELALELERİ</a
+            >
+          </h4>
+        </div>
+        <p>
+          Beş tanesi büyük, 2 tanesi küçük olmak üzere yan yana dizi halinde
+          dökülen şelalelerin yükseklikleri ortalama 40-60 m. olup, her biri bir
+          dereyi besleyecek güçtedir. Kapuzbaşı Şelaleleri, sularının yıl boyu
+          gür akması ve yüksekliklerinin fazla olması nedeniyle yurdumuzun en
+          büyük şelaleri arasında yer almaktadır. Dağ yamaçlarından biribiri ile
+          yarışırcasına akan yan yana 7 şelale, doğanın Kayseri’ye armağan
+          ettiği eşsiz güzelliklerden. Bembeyaz akan Kapuzbaşı Şelaleleri,
+          etrafında piknik alanlarıyla, suyun huzur veren dinlendirici sesi
+          eşliğinde güzel bir gün geçirmek için mükemmel bir ortam yaratıyor.
+          Kayseri’deki en popüler treking parkuru üzerindeki şelaleler benzersiz
+          manzalar eşliğinde bir yürüyüş deneyimi sunuyor. Yahyalı ilçesinde
+          Kapuzbaşı Şelaleleri dışında Yeşilköy ve Derebağ Şelaleleri de var ve
+          etrafındaki yeşil alanla olağan üstü görüntüler yaratıyor. Derebağ
+          Şelalesi yanında ferah bir gün geçirmek için çay evi, restoran ve
+          piknik alanları da var. Torosların Tepesindeki doğal güzelliklere
+          sahip Kapuzbaşı Şelalelerine ulaşımı sağlayan yolun tamamı
+          asfaltlanmıştır. Önceden üç saate ulaşılan güzelliklere artık 1,5
+          saatte kavuşmak mümkündür.
+        </p>
+      </div>
+      <div class="kapuzbasiresim">
+        <img
+          src="resimler/kapuzbasi.jpeg"
+          alt="kapuzbaşı şelaleleri"
+          width="450px"
+          height="350px"
+        />
+      </div>
+    </section>
 
-    <div class="class-5">
-      <h4>
-        <a href="https://tr.wikipedia.org/wiki/Erciyes_Da%C4%9F%C4%B1">
-          ERCİYES DAĞI</a
-        >
-      </h4>
-      <p>
-        Şehir merkezine yakınlığı ve dünyaca ünlü toz karı ile meşhur Erciyes
-        Dağı, şehrin güney kısmında yer alır. Deniz seviyesinden yüksekliği
-        3.917 metredir. Türkiye'nin büyük dağlarından biri olma özelliğine sahip
-        olan Erciyes, yıl içerisinde kayak yapmak için uygun bir alan olarak
-        görülebilir.
-      </p>
-      <p>
-        Türkiye'nin kayak pistine sahip bölgelerinden biridir. Ayrıca sağlık
-        turizmi açısından da, gerek temiz ve yumuşak havası gerekse doğal zengin
-        mineralli kaynak sularıyla sağlık ve kış sporları için uygundur. Var
-        olan Erciyes kayak bölgesi, alt istasyonu deniz seviyesinden yaklaşık
-        2200 metre yükseklikte olan ve Kayseri’ye yaklaşık 23 kilometre
-        uzaklıkta olan Tekir Yaylası üzerine kurulmuştur. Bol kar alışı ve
-        havasından dolayı kayak mevsimi uzun olan bir dağdır.
-      </p>
-      <p>
-        Ailecek gidilebilecek bir yerdir. Kayak yapmayı bilmiyorsanız bile kızak
-        ile kayabilirsiniz.Kayaktan sonra sıcak bir çay ve sucuk ekmek yiyerek
-        erciyes macerasını zirvede bırakıp unutulmayacak bir anı olarak
-        hafızanıza kazıyabilirsiniz.
-      </p>
-    </div>
-    <div id="erciyes">
-      <img
-        src="resimler/dag.jpeg"
-        alt="erciyes dağı"
-        width="460px"
-        height="380px"
-      />
-    </div>
+    <section id="sazlik">
+      <div class="sultanSazligiresim">
+        <img
+          src="resimler/sultan sazlığı.jpg"
+          alt="sultan sazlığı"
+          width="470px"
+          height="350px"
+        />
+      </div>
 
-    <div id="kentOrmani">
-      <img
-        src="resimler/kentOrmani.jpeg"
-        alt="kıranardı kent ormanı"
-        width="470px"
-        height="350px"
-      />
-    </div>
+      <div class="sultansazligi">
+        <div class="sazlikbaslik">
+          <h4>
+            <a href="https://kayseri.ktb.gov.tr/TR-183204/sultan-sazligi.html"
+              >SULTAN SAZLIĞI</a
+            >
+          </h4>
+        </div>
+        <p>
+          Dünyanın sayılı kuş yurtlarından biridir. Sultansazlığı, barındırdığı
+          kuş varlığı ile Avrupa ve Orta Doğu'nun en önemli sulak alanlarından
+          biridir. Sultansazlığı'nda şimdiye kadar 251 kuş türü tespit
+          edilmiştir. 600 bin adet ördek, kaz ve flamingo tespit edilmiştir.
+          17.200 hektarlık alanı kapsamaktadır. 1971 yılında alanın Türkiye
+          Cumhuriyeti Tarım ve Orman Bakanlığı tarafından "Su Kuşları Koruma ve
+          Üretme Sahası" olarak ilan edilmesini takiben, koruma çalışmaları
+          başlatılmıştır.Sultan Sazlığı, step ekosistemi içerisinde eşine az
+          rastlanan tatlı ve tuzlu su ekosistemini bir arada bulundurarak, İç
+          Anadolu step ekosistemi içerisinde sahip olduğu zengin biyolojik
+          çeşitliliği ve Afrika ile Avrupa arasındaki göçmen kuşlarının
+          kullandığı iki ana kuş göç yolunun bu alanda kesişmesi nedeniyle
+          ülkemizde en önemli sulak alanlardan birisidir. Burada 600 bin adet
+          ördek, kaz, flamingo ve çok çeşitli kuşlara rastlanır.
+        </p>
+      </div>
+    </section>
 
-    <div class="class-6">
-      <h4>
-        <a
-          href="https://www.tripadvisor.com.tr/Attraction_Review-g297984-d14958046-Reviews-KIranardI_Kent_OrmanI-Kayseri_Kayseri_Province.html"
-        >
-          KIRANARDI KENT ORMANI</a
-        >
-      </h4>
-      <p>
-        Kayseri’nin sıcak yaz günlerinde, gece ve gündüz doyumsuz Erciyes ve
-        şehir manzarası sunan Kıranardı Kent Ormanı hisarcık istikametinde olup
-        hem Erciyes’i hem de Hisarcık’ı fotoğraflayabilmek ve Kayseri’nin uzak
-        plan görüntüsünü de görmek mümkündür. Kısaca burası hem piknik yapmak
-        için hem de seyir seyri açısından harika bir mekandır.
-      </p>
-    </div>
+    <section id="vadi">
+      <div class="koramazvadisi">
+        <div class="vadibaslik">
+          <h4><a href="http://www.koramazvadisi.com/">KORAMAZ VADİSİ</a></h4>
+        </div>
 
-    <div class="class-7">
-      <h4>
-        <a href="https://www.yahyali.bel.tr/kapuzbasi-selaleleri"
-          >KAPUZBAŞI ŞELALELERİ</a
-        >
-      </h4>
-      <p>
-        Beş tanesi büyük, 2 tanesi küçük olmak üzere yan yana dizi halinde
-        dökülen şelalelerin yükseklikleri ortalama 40-60 m. olup, her biri bir
-        dereyi besleyecek güçtedir. Kapuzbaşı Şelaleleri, sularının yıl boyu gür
-        akması ve yüksekliklerinin fazla olması nedeniyle yurdumuzun en büyük
-        şelaleri arasında yer almaktadır. Dağ yamaçlarından biribiri ile
-        yarışırcasına akan yan yana 7 şelale, doğanın Kayseri’ye armağan ettiği
-        eşsiz güzelliklerden. Bembeyaz akan Kapuzbaşı Şelaleleri, etrafında
-        piknik alanlarıyla, suyun huzur veren dinlendirici sesi eşliğinde güzel
-        bir gün geçirmek için mükemmel bir ortam yaratıyor. Kayseri’deki en
-        popüler treking parkuru üzerindeki şelaleler benzersiz manzalar
-        eşliğinde bir yürüyüş deneyimi sunuyor. Yahyalı ilçesinde Kapuzbaşı
-        Şelaleleri dışında Yeşilköy ve Derebağ Şelaleleri de var ve etrafındaki
-        yeşil alanla olağan üstü görüntüler yaratıyor. Derebağ Şelalesi yanında
-        ferah bir gün geçirmek için çay evi, restoran ve piknik alanları da var.
-        Torosların Tepesindeki doğal güzelliklere sahip Kapuzbaşı Şelalelerine
-        ulaşımı sağlayan yolun tamamı asfaltlanmıştır. Önceden üç saate ulaşılan
-        güzelliklere artık 1,5 saatte kavuşmak mümkündür.
-      </p>
-    </div>
-    <div id="kapuzbasi">
-      <img
-        src="resimler/kapuzbasi.jpeg"
-        alt="kapuzbaşı şelaleleri"
-        width="450px"
-        height="350px"
-      />
-    </div>
+        <p>
+          Doğudan batıya kıvrılarak uzayan bir yapıya sahip olan Koramaz Vadisi,
+          aslında bir deprem kırığı oluşumu. 12 kilometrelik uzunluğa sahip olan
+          vadi, günümüzde yaşamın devam ettiği yedi yerleşim yerini
+          barındırıyor. Doğudan batıya Büyük Bürüngüz, Subaşı, Küçük Bürüngüz,
+          Ağırnas, Turan, Vekse ve Bağpınar isimli bu yerleşim yerlerinde
+          binlerce yıllık geçmişe sahip ortak somut ve somut olmayan kültürler
+          mevcut. Vadi, doğu ve batı uçlarında sahip olduğu kot farkıyla
+          kendisiyle aynı ismi taşıyan Koramaz Çayı’nın taban boyunca rahatça
+          akmasını sağlıyor.Doğal güzelliklerinin yanı sıra, bölgenin köklü
+          tarihi sayesinde inşa edilmiş yapılarla da bir kültür müzesi görevi
+          gören Koramaz Vadisi’nde ilerlerken karşınıza neler mi çıkabilir?
+          Günümüze kadar 38’i keşfedilebilmiş kaya oyma kiliseler ile iki modern
+          kilise sizi bekleyen yapılar arasında. Büyük bir bölümü Bizans
+          döneminden kalan kiliselerin yanı sıra nadir freskler içeren ve az
+          rastlanabilecek yapılara sahip kiliseler de Koramaz Vadisi’nin ev
+          sahipliği yaptığı yapılardan. Bizans dönemi demişken, yeni yeni
+          keşfedilen bir bölge olması nedeniyle Koramaz Vadisi’nin sahip olduğu
+          fakat kullanım amacı henüz bilinmeyen antik dönem ve Bizans dönemi
+          yapıları da keşfedilmeyi bekliyor. Tabii, Bizans döneminin yanı sıra
+          19. ve 20. yüzyılda inşa edilen konak, köşk ve okullar da vadinin
+          geneline yayılmış, Koramaz Vadisi boyunca mimarî bir tarz oturtmuş
+          biçimde yer almaktadır. Koramaz Vadisi’nin yerleşim sokaklarında
+          gezdiğiniz sırada kendinizi başka diyarlara yolculuk yapıyor gibi
+          hissetmeniz oldukça mümkün!
+        </p>
+      </div>
+      <div class="koramazVadiresim">
+        <img src="resimler/koramazVadi.jpeg" alt="koramaz vadisi" />
+      </div>
+    </section>
+    <section id="sporbaslik"><h3>SPOR</h3></section>
+    <section id="spor">
+      <div class="sporyazi">
+        <p>
+          Futbolda Süper Lig'de
+          <b> <a href="https://kayserispor.org.tr/">KAYSERİSPOR</a> </b> şehri
+          temsil eder. Şehirde, 2009'da hizmete giren 32.863 seyirci kapasiteli
+          tüm tribünleri kapalı, tamamı koltuklu Kayseri Kadir Has Şehir
+          Stadyumu mevcuttur.
+        </p>
+        <p>
+          Basketbolda ise kadınlar birinci liginde mücadele eden Kayseri
+          Basketbol, ile temsil edilmektedir. Kayseri Basketbol,maçlarını 7.500
+          seyirci kapasiteli Kadir Has Spor Salonunda yapmaktadır.
+        </p>
+        <p>
+          2018-2019 Sezonu sonunda, Kayserispor futbol süper liginde
+          10.olmuştur. Kayseri Basketbol, Basketbol kadınlarda süper liginde
+          10.olmuştur. BAL’da 1 takımı, kadın futbolu 3. Liginde 4 takımı
+          vardır. Ayrıca voleybol ve hentbol 2. Liglerindeki 5 takımdan ikisi
+          küme düşmüştür. Bölgesel liglerde ise 7 takımı yer almıştır.
+        </p>
+      </div>
+      <div class="resimler">
+        <img id="ks" src="resimler/ks.png" alt="Kayseri spor" />
+        <img id="stadyum" src="resimler/stadyum.jpeg" alt="kadirhas Stadyumu" />
+      </div>
+    </section>
+    <section id="universitebaslik"><h3>ÜNİVERSİTELER</h3></section>
 
-    <div id="sultanSazligi">
-      <img
-        src="resimler/sultanSazligi.jpeg"
-        alt="sultan sazlığı"
-        width="470px"
-        height="350px"
-      />
-    </div>
-    <div class="class-8">
-      <h4>
-        <a href="https://kayseri.ktb.gov.tr/TR-183204/sultan-sazligi.html"
-          >SULTAN SAZLIĞI</a
-        >
-      </h4>
-      <p>
-        Dünyanın sayılı kuş yurtlarından biridir. Sultansazlığı, barındırdığı
-        kuş varlığı ile Avrupa ve Orta Doğu'nun en önemli sulak alanlarından
-        biridir. Sultansazlığı'nda şimdiye kadar 251 kuş türü tespit edilmiştir.
-        600 bin adet ördek, kaz ve flamingo tespit edilmiştir. 17.200 hektarlık
-        alanı kapsamaktadır. 1971 yılında alanın Türkiye Cumhuriyeti Tarım ve
-        Orman Bakanlığı tarafından "Su Kuşları Koruma ve Üretme Sahası" olarak
-        ilan edilmesini takiben, koruma çalışmaları başlatılmıştır.Sultan
-        Sazlığı, step ekosistemi içerisinde eşine az rastlanan tatlı ve tuzlu su
-        ekosistemini bir arada bulundurarak, İç Anadolu step ekosistemi
-        içerisinde sahip olduğu zengin biyolojik çeşitliliği ve Afrika ile
-        Avrupa arasındaki göçmen kuşlarının kullandığı iki ana kuş göç yolunun
-        bu alanda kesişmesi nedeniyle ülkemizde en önemli sulak alanlardan
-        birisidir. Burada 600 bin adet ördek, kaz, flamingo ve çok çeşitli
-        kuşlara rastlanır.
-      </p>
-    </div>
+    <section id="universiteler">
+      <div class="okullar">
+        <p>
+          <b> <a href="https://www.erciyes.edu.tr/">ERCİYES ÜNİVERSİTESİ</a> </b
+          >, 1978 yılında Kayseri Üniversitesi adı altında kuruldu. 1969 yılında
+          Hacettepe Üniversitesi'ne bağlı olarak açılan Gevher Nesibe Tıp
+          Fakültesi ve 1977 yılında açılan Kayseri İşletme Fakültesi, Erciyes
+          Üniversitesi'nin nüvesini oluşturmuştur. Kayseri’deki diğer iki
+          yükseköğretim kurumu olan ve 1965’te kurulan Kayseri Yüksek İslam
+          Enstitüsü İlahiyat Fakültesi olarak; 1977’de kurulan Kayseri Devlet
+          Mimarlık ve Mühendislik Akademisini Mühendislik Fakültesi olarak
+          bünyesine alarak 1982 yılında Erciyes Üniversitesi adını almıştır.
+        </p>
 
-    <div class="class-9">
-      <h4><a href="http://www.koramazvadisi.com/">KORAMAZ VADİSİ</a></h4>
-      <p>
-        Doğudan batıya kıvrılarak uzayan bir yapıya sahip olan Koramaz Vadisi,
-        aslında bir deprem kırığı oluşumu. 12 kilometrelik uzunluğa sahip olan
-        vadi, günümüzde yaşamın devam ettiği yedi yerleşim yerini barındırıyor.
-        Doğudan batıya Büyük Bürüngüz, Subaşı, Küçük Bürüngüz, Ağırnas, Turan,
-        Vekse ve Bağpınar isimli bu yerleşim yerlerinde binlerce yıllık geçmişe
-        sahip ortak somut ve somut olmayan kültürler mevcut. Vadi, doğu ve batı
-        uçlarında sahip olduğu kot farkıyla kendisiyle aynı ismi taşıyan Koramaz
-        Çayı’nın taban boyunca rahatça akmasını sağlıyor.Doğal güzelliklerinin
-        yanı sıra, bölgenin köklü tarihi sayesinde inşa edilmiş yapılarla da bir
-        kültür müzesi görevi gören Koramaz Vadisi’nde ilerlerken karşınıza neler
-        mi çıkabilir? Günümüze kadar 38’i keşfedilebilmiş kaya oyma kiliseler
-        ile iki modern kilise sizi bekleyen yapılar arasında. Büyük bir bölümü
-        Bizans döneminden kalan kiliselerin yanı sıra nadir freskler içeren ve
-        az rastlanabilecek yapılara sahip kiliseler de Koramaz Vadisi’nin ev
-        sahipliği yaptığı yapılardan. Bizans dönemi demişken, yeni yeni
-        keşfedilen bir bölge olması nedeniyle Koramaz Vadisi’nin sahip olduğu
-        fakat kullanım amacı henüz bilinmeyen antik dönem ve Bizans dönemi
-        yapıları da keşfedilmeyi bekliyor. Tabii, Bizans döneminin yanı sıra 19.
-        ve 20. yüzyılda inşa edilen konak, köşk ve okullar da vadinin geneline
-        yayılmış, Koramaz Vadisi boyunca mimarî bir tarz oturtmuş biçimde yer
-        almaktadır. Koramaz Vadisi’nin yerleşim sokaklarında gezdiğiniz sırada
-        kendinizi başka diyarlara yolculuk yapıyor gibi hissetmeniz oldukça
-        mümkün!
-      </p>
-    </div>
-    <div id="koramazVadi">
-      <img
-        src="resimler/koramazVadi.jpeg"
-        alt="koramaz vadisi"
-        width="450px"
-        height="350px"
-      />
-    </div>
-
-    <div class="class-10">
-      <h3 style="text-align: center">SPOR</h3>
-      <p>
-        Futbolda Süper Lig'de
-        <b> <a href="https://kayserispor.org.tr/">KAYSERİSPOR</a> </b> şehri
-        temsil eder. Şehirde, 2009'da hizmete giren 32.863 seyirci kapasiteli
-        tüm tribünleri kapalı, tamamı koltuklu Kayseri Kadir Has Şehir Stadyumu
-        mevcuttur.
-      </p>
-      <p>
-        Basketbolda ise kadınlar birinci liginde mücadele eden Kayseri
-        Basketbol, ile temsil edilmektedir. Kayseri Basketbol,maçlarını 7.500
-        seyirci kapasiteli Kadir Has Spor Salonunda yapmaktadır.
-      </p>
-      <p>
-        2018-2019 Sezonu sonunda, Kayserispor futbol süper liginde 10.olmuştur.
-        Kayseri Basketbol, Basketbol kadınlarda süper liginde 10.olmuştur.
-        BAL’da 1 takımı, kadın futbolu 3. Liginde 4 takımı vardır. Ayrıca
-        voleybol ve hentbol 2. Liglerindeki 5 takımdan ikisi küme düşmüştür.
-        Bölgesel liglerde ise 7 takımı yer almıştır.
-      </p>
-      <img
-        id="ks"
-        src="resimler/ks.png"
-        alt="Kayseri spor"
-        width="350px"
-        height="350px"
-      />
-      <img
-        id="stadyum"
-        src="resimler/stadyum.jpeg"
-        alt="kadirhas Stadyumu"
-        width="450px"
-        height="350px"
-      />
-    </div>
-
-    <div class="class-11">
-      <h3 style="text-align: center">ÜNİVERSİTELER</h3>
-      <p>
-        <b> <a href="https://www.erciyes.edu.tr/">ERCİYES ÜNİVERSİTESİ</a> </b>,
-        1978 yılında Kayseri Üniversitesi adı altında kuruldu. 1969 yılında
-        Hacettepe Üniversitesi'ne bağlı olarak açılan Gevher Nesibe Tıp
-        Fakültesi ve 1977 yılında açılan Kayseri İşletme Fakültesi, Erciyes
-        Üniversitesi'nin nüvesini oluşturmuştur. Kayseri’deki diğer iki
-        yükseköğretim kurumu olan ve 1965’te kurulan Kayseri Yüksek İslam
-        Enstitüsü İlahiyat Fakültesi olarak; 1977’de kurulan Kayseri Devlet
-        Mimarlık ve Mühendislik Akademisini Mühendislik Fakültesi olarak
-        bünyesine alarak 1982 yılında Erciyes Üniversitesi adını almıştır.
-      </p>
-
-      <p>
-        <b> <a href="http://www.agu.edu.tr/">ABDULLAH GÜL ÜNİVERSİTESİ</a> </b>,
-        Kayseri'nin 4. üniversitesi ve 2. devlet üniversitesidir.
-      </p>
-      <p>
-        <b> <a href="https://www.kayseri.edu.tr/">MELİKŞAH ÜNİVERSİTESİ</a> </b>
-        , Kayseri'nin ilk vakıf üniversitesi olarak 2008 yılında öğrenci alımına
-        başlamıştır. 15 Temmuz darbe girişimi sonrasında üniversiteye kayyum
-        atanmıştır ve Ekim 2016'da Erciyes Üniversitesi'ne devredilmiştir.[48]
-        Daha sonra Melikşah Kampüsü, Erciyes Üniversitesi'nden ayrılarak Kayseri
-        Üniversitesi'nin kurulması ile Kayseri Üniversitesi'ne devrolmuştur.
-      </p>
-      <p>
-        <b>
-          <a href="https://www.nny.edu.tr/">NUH NACİ YAZGAN ÜNİVERSİTESİ</a> </b
-        >, Kayseri'nin 2. vakıf üniversitesi olan üniversite 2011-2012 eğitim
-        öğretim döneminde öğrenci alımına başlamıştır.
-      </p>
-    </div>
-
-    <div class="class-12" style="text-align: center">
-      <a href="1_girisSayfasi.html" style="font-size: 20px"
-        >Giriş sayfasına dön</a
-      >
-    </div>
-
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-    </script>
+        <p>
+          <b> <a href="http://www.agu.edu.tr/">ABDULLAH GÜL ÜNİVERSİTESİ</a> </b
+          >, Kayseri'nin 4. üniversitesi ve 2. devlet üniversitesidir.
+        </p>
+        <p>
+          <b>
+            <a href="https://www.kayseri.edu.tr/">MELİKŞAH ÜNİVERSİTESİ</a>
+          </b>
+          , Kayseri'nin ilk vakıf üniversitesi olarak 2008 yılında öğrenci
+          alımına başlamıştır. 15 Temmuz darbe girişimi sonrasında üniversiteye
+          kayyum atanmıştır ve Ekim 2016'da Erciyes Üniversitesi'ne
+          devredilmiştir.[48] Daha sonra Melikşah Kampüsü, Erciyes
+          Üniversitesi'nden ayrılarak Kayseri Üniversitesi'nin kurulması ile
+          Kayseri Üniversitesi'ne devrolmuştur.
+        </p>
+        <p>
+          <b>
+            <a href="https://www.nny.edu.tr/"
+              >NUH NACİ YAZGAN ÜNİVERSİTESİ</a
+            > </b
+          >, Kayseri'nin 2. vakıf üniversitesi olan üniversite 2011-2012 eğitim
+          öğretim döneminde öğrenci alımına başlamıştır.
+        </p>
+      </div>
+    </section>
   </body>
 </html>

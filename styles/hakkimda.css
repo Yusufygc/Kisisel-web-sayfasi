@@ -1,20 +1,225 @@
-.baslik {
-  text-align: center;
-  background-color: aquamarine;
-  margin-top: 25px;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.girisparag {
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: coral;
+img {
+  width: 100%;
+}
+
+section {
+  padding: 100px 0;
+  background: linear-gradient(to right, #203d53, #051b38);
+  /*background: #4f6779;*/
+}
+
+.carousel-item img {
+  /*sliderler için*/
+  padding: 0 30%;
+}
+
+.baslik {
+  margin-top: 25px;
+  position: relative;
+  text-align: center;
+  color: #163248;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  background-color: aquamarine;
+}
+.baslik:hover {
+  color: #000000;
+  background-color: rgb(191, 219, 151);
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  font-size: 25px;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.navbar-brand:hover {
+  color: #000;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+.nav-link:hover {
+  color: #000;
+}
+
+.anasayfa {
+  display: flex;
+  justify-content: space-between; /*Birbirine eşit aralıkta ortalar*/
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+.anasayfa .girisparag {
+  color: #fff;
+  font-size: 25px;
+}
+.girisparag:hover {
+  background: transparent;
+  border: 2px solid #24caac;
+  padding: 12px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.anasayfa .resim {
+  width: 250%;
+  height: 250%;
+  flex-wrap: wrap;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border: 3px solid #24caac;
+}
+
+.ben h2 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 70px;
+}
+.ben h2:hover {
+  color: #000000;
+  background-color: rgb(191, 219, 151);
+  font-size: 50px;
 }
 
 .hobiler {
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: rgb(191, 219, 151);
+  justify-content: space-between; /*Birbirine eşit aralıkta ortalar*/
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
 }
+.hobibaslik h3 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 70px;
+}
+.hobibaslik:hover h3 {
+  color: #000000;
+  background-color: rgb(191, 219, 151);
+  font-size: 50px;
+}
+.hobiler li b {
+  color: #7a9712;
+}
+.hobiler li {
+  margin-bottom: 20px;
+
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hobiler li:hover {
+  background: transparent;
+  border: 2px solid #24caac;
+  font-size: 30px;
+}
+
+.sporlar {
+  justify-content: space-between; /*Birbirine eşit aralıkta ortalar*/
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+}
+.sporbaslik h3 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 70px;
+}
+.sporbaslik h3:hover {
+  color: #000000;
+  background-color: rgb(191, 219, 151);
+  font-size: 50px;
+}
+.sporlar li b {
+  color: #7a9712;
+}
+.sporlar li {
+  margin-bottom: 20px;
+
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sporlar li:hover {
+  background: transparent;
+  border: 2px solid #24caac;
+  font-size: 30px;
+}
+
+.etkinlikler {
+  justify-content: space-between; /*Birbirine eşit aralıkta ortalar*/
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+}
+.etkinlikbaslik h3 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 70px;
+}
+.etkinlikbaslik h3:hover {
+  color: #000000;
+  background-color: rgb(191, 219, 151);
+  font-size: 50px;
+}
+.etkinlikler li b {
+  color: #7a9712;
+}
+.etkinlikler li {
+  margin-bottom: 20px;
+
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.etkinlikler li:hover {
+  background: transparent;
+  border: 2px solid #24caac;
+  font-size: 30px;
+}
+
+/*
 .sporlar {
   margin-left: 40px;
   margin-right: 40px;
@@ -25,7 +230,7 @@
   margin-right: 40px;
   background-color: rgb(191, 219, 151);
 }
-#footer {
+.footer {
   background-color: rgb(96, 181, 204);
   text-align: center;
 }
@@ -39,3 +244,4 @@
   margin-left: 325px;
   margin-right: 325px;
 }
+*/

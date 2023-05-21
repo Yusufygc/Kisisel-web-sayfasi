@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Sayfası</title>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="index.php" method="post">
+        <div class="title">Login</div>
+
+        <div class="input-box">
+          <input
+            type="email"
+            name="kullanici_adi"
+            placeholder="Öğrenci emailinizi giriniz."
+            required
+            autocomplete="off"
+          />
+          <div class="underline"></div>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            name="sifre"
+            placeholder="Şifrenizi giriniz."
+            required
+          />
+          <div class="underline"></div>
+        </div>
+
+        <div class="input-box button">
+          <input type="submit" value="Giriş yap" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
