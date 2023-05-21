@@ -38,12 +38,8 @@ $sifre=$_POST["sifre"];
     
         #echo"<a href='1_girisSayfasi.html'>Giriş sayfasına git</a>";
     }
-
 ?>
-
 </div>
-
-
 </body>
 </html>
 

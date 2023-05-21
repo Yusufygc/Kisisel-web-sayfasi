@@ -266,6 +266,7 @@ table tr .konu {
     max-width: 450px;
     width: 100%;
     margin-bottom: 50px;
+    text-align: left;
   }
   .kisiselbilgiler {
     max-width: 450px;
